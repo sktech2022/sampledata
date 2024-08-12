@@ -1,0 +1,10 @@
+{% include 'nav.html' %}
+<hr>
+<form action="" method="POST">
+    {% csrf_token %}
+    Task Name : <input type="text" placeholder="Enter The Task Name" name="task">
+    <br>
+    Status: <input type="text" placeholder="Status: Pending/Finished" name="status">
+    <br>
+    <input type="submit" value="save">
+</form>
